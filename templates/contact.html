@@ -1,13 +1,87 @@
 <html>
   <head>
   <meta charset="UTF-8">
-  <title>Formulaire de contact</title>
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background-color: #f7f8fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #0055aa;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #222;
+    }
+
+    input, textarea {
+      width: 100%;
+      margin: 8px 0 15px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0055aa;
+      outline: none;
+      box-shadow: 0 0 4px #0055aa44;
+    }
+
+    button {
+      background: #0055aa;
+      color: white;
+      font-weight: bold;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #003f80;
+    }
+
+    #status {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    #status.ok {
+      color: green;
+    }
+
+    #status.error {
+      color: red;
+    }
+  </style>
 </head>
 <body>
 
   <h1>Formulaire de contact</h1>
 
-  <form id="contactForm">
+  <form action="/submit" method="post">
     <label for="name">Nom :</label><br>
     <input type="text" id="name" name="name" required><br><br>
 
@@ -20,35 +94,8 @@
     <label for="message">Message :</label><br>
     <textarea id="message" name="message" rows="5" cols="33" required></textarea><br><br>
 
-    <button type="submit">Envoyer</button>
+    <input type="submit" value="Envoyer">
   </form>
-
-  <p id="status"></p>
-
-  <script>
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('status');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const data = {
-        name: form.name.value,
-        email: form.email.value,
-        subject: form.subject.value,
-        message: form.message.value
-      };
-
-      // Simule un "envoi"
-      status.textContent = "⏳ Envoi en cours...";
-      
-      setTimeout(() => {
-        console.log("Message envoyé :", data);
-        status.textContent = "✅ Message envoyé avec succès !";
-        form.reset();
-      }, 1000);
-    });
-  </script>
 
 </body>
 </html>
