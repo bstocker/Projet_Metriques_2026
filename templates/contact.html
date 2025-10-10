@@ -1,9 +1,27 @@
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Contact</title>
- </head>  
+  <meta charset="UTF-8">
+  <title>Contact</title>
+</head>
 <body>
-    <h2>Mon Graphique</h2>
+
+  <h1>Formulaire de contact</h1>
+
+  <form action="/submit" method="post">
+    <label for="name">Nom :</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="subject">Sujet :</label><br>
+    <input type="text" id="subject" name="subject"><br><br>
+
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="5" cols="33" required></textarea><br><br>
+
+    <input type="submit" value="Envoyer">
+  </form>
+
 </body>
 </html>
