@@ -58,7 +58,7 @@ def commits_data():
     for item in payload:
         commit_info = item.get('commit', {})
         author_info = commit_info.get('author', {})
-        date_str = author_info.get('date')  # ex: "2024-02-11T11:57:27Z"
+        date_str = author_info.get('date')
         if not date_str:
             continue
         try:
