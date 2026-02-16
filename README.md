@@ -56,8 +56,8 @@ git pull
 ```
 make run
 ```
-
-Notions acquises dans cette séquence : Vous avez dans cette séquence modifier du code dans Github, puis mis à jour votre espace Codespace pour enfin observer le résultat en ligne (environnement en "production").
+  
+**Notions acquises lors de cet exercice :** Notions acquises dans cette séquence : Vous avez dans cette séquence modifier du code dans Github, puis mis à jour votre espace Codespace pour enfin observer le résultat en ligne (environnement en "production").
 
 ---------------------------------------------------
 Séquence 4 : Exercices
@@ -77,7 +77,7 @@ def MaPremiereAPI():
 
 Mettez à jour votre serveur (séquence 3) et tappez **https://{Votre URL}/contact** dans l'URL de votre navigateur et observez le résultat en ligne.  
   
-Notions acquises lors de cet exercice : Vous avez appris lors de cet exercice à créer des API (c'est à dire des routes) dans une application Python. Vous pouvez créer autant d'API (de routes) que vous le souhaitez pour les besoins de votre application Python.  
+**Notions acquises lors de cet exercice :** Vous avez appris lors de cet exercice à créer des API (c'est à dire des routes) dans une application Python. Vous pouvez créer autant d'API (de routes) que vous le souhaitez pour les besoins de votre application Python.  
   
 <sub>_________________________________________________________________________</sub>
 ### Exercice 2 : Les données d'une API   
@@ -114,7 +114,7 @@ def api_paris():
 ```
 **Mettez à jour votre Codespace** et observez le résultat sur votre site Web en ligne.  
 
-Notions acquises dans cet exercice : Vous avez appris lors de cet exercice à créer des API présentant des données filtrées issues d'input au format JSON.
+**Notions acquises dans cet exercice :** Vous avez appris lors de cet exercice à créer des API présentant des données filtrées issues d'input au format JSON.
   
 <sub>_________________________________________________________________________</sub>
 ### Exercice 3 : Les fichiers HTML dans Flask   
@@ -145,7 +145,7 @@ def mongraphique():
 ```
 **Mettez à jour votre Codespace** et observez le résultat sur votre site Web en ligne.  
   
-Notions acquises dans cet exercice : Nous avons vu lors de cet exercice comment créer et où déposer les fichiers HTML lorsque l'on utise le Framework Flask. Nous avons également découvert que les Framework (cadre de travail) nous imposent une structure de travail où chaque élément doit être déposés à sa place.  
+**Notions acquises dans cet exercice :** Nous avons vu lors de cet exercice comment créer et où déposer les fichiers HTML lorsque l'on utise le Framework Flask. Nous avons également découvert que les Framework (cadre de travail) nous imposent une structure de travail où chaque élément doit être déposés à sa place.  
 
 <sub>_________________________________________________________________________</sub>
 ### Exercice 4 : Mise en graphique   
@@ -259,7 +259,7 @@ Pour cela, nous devons utiliser les données de notre nouvelle API /rapport (la 
 </body>
 </html>
 ```
-Notions acquises dans cet exercice : Nous avons fetcher le endpoint Flask /paris au fichier html graphique.html (en ajoutant un Google Charts LineChart) transformant ainsi la réponse JSON de l'API /paris en un graphique lisible pour l'utisateur.  
+**Notions acquises dans cet exercice :** Nous avons fetcher le endpoint Flask /paris au fichier html graphique.html (en ajoutant un Google Charts LineChart) transformant ainsi la réponse JSON de l'API /paris en un graphique lisible pour l'utisateur.  
 
 <sub>_________________________________________________________________________</sub>
 ### Exercice 5 : Créer votre propre graphique   
@@ -298,5 +298,5 @@ Troubleshooting :
 Objectif : Visualiser ses logs et découvrir ses erreurs
 ---------------------------------------------------
 Lors de vos développements, vous serez peut-être confronté à des erreurs systèmes car vous aurez faits des erreurs de syntaxes dans votre code, faits de mauvaises déclarations de fonctions, appelez des modules inexistants, mal renseigner vos secrets, etc…  
-  
+   
 Les causes d'erreurs sont quasi illimitées. **Vous devez donc vous tourner vers les logs de votre serveur via le terminal de Codespace pour comprendre d'où vient le problème**  
